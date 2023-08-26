@@ -29,7 +29,7 @@
 
 /* Image */
 .image {
-  background: url('../assets/netflix_logo.svg') no-repeat center center;
+  background: url('../../assets/netflix_logo.svg') no-repeat center center;
   background-size: 150px;
   margin-right: auto;
   width: 160px;

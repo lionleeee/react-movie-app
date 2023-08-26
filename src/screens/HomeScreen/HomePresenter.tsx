@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Loader from '../../components/Loader/Loader';
 import styles from './HomePresenter.module.css';
 import Message from '../../components/Message/Message';
+import Description from '../../components/Description/Description';
 
 interface Video {
   key: string;
@@ -98,6 +99,7 @@ const HomePresenter: React.FC<HomePresenterProps> = ({
           </div>
           <div className={styles.homeSubContainer}>
             {/* Render Description, QnA, and Footer components */}
+            <Description />
           </div>
         </div>
       )}
