@@ -5,6 +5,8 @@ import Loader from '../../components/Loader/Loader';
 import styles from './HomePresenter.module.css';
 import Message from '../../components/Message/Message';
 import Description from '../../components/Description/Description';
+import QnA from '../../components/QnA/QnA';
+import Footer from '../../components/Footer/Footer';
 
 interface Video {
   key: string;
@@ -100,6 +102,8 @@ const HomePresenter: React.FC<HomePresenterProps> = ({
           <div className={styles.homeSubContainer}>
             {/* Render Description, QnA, and Footer components */}
             <Description />
+            <QnA/>
+            <Footer/>
           </div>
         </div>
       )}
