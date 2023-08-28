@@ -154,7 +154,7 @@ const ScLink = styled(Link)`
 
 const Poster: React.FC<PosterProps> = ({ id, imageurl, title, rating, year, isMovie = false, overview, popularity }) => {
   return (
-    <ScLink to={isMovie ? `/movie/${id}` : `/tv/${id}`}>
+    <ScLink to={`/detail/${id}`}>
   <Container>
     <PosterContainer>
       <Image url={imageurl ? `https://image.tmdb.org/t/p/w300${imageurl}` : noPoster} />

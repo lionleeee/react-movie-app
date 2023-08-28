@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { moviesApi } from "api/movie";
@@ -55,6 +54,7 @@ const MoviePresenter: React.FC<MoviePresenterProps> = ({
 
   
   const getInfiniteApi = async (): Promise<void> => {
+    console.log(page);
     if (page !== 1) {
       try {
         let newMovies: any[] = [];
@@ -95,7 +95,7 @@ const MoviePresenter: React.FC<MoviePresenterProps> = ({
   useEffect(() => {
     getInfiniteApi();
     //window.addEventListener("scroll", handleScroll);
-  }, [page,pathname]);
+  }, [page]);
 
   return loading ? (
     <Loader/>

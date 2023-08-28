@@ -8,26 +8,8 @@ import Description from '../../components/Description/Description';
 import QnA from '../../components/QnA/QnA';
 import Footer from '../../components/Footer/Footer';
 
-interface Video {
-  key: string;
-}
 
-interface Genre {
-  name: string;
-}
 
-interface MovieDetail {
-  title: string |null;
-  tagline: string;
-  genres: Genre[];
-  videos: {
-    results: Video[];
-  };
-  release_date: string;
-  runtime: number;
-  overview: string;
-  vote_average: number;
-}
 interface HomePresenterProps {
   movieDetail: any;
   error: string | null;

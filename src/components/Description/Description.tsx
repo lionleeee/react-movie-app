@@ -4,8 +4,10 @@ import iconTV from '../../assets/icon_tv.png';
 import iconDevice from '../../assets/icon_device.png';
 import iconKid from '../../assets/icon_kid.png';
 import iconMobile from '../../assets/icon_mobile.jpg';
-//import videoTV from '@assets/video_tv.mp4';
-//import videoDevice from "../../assets/video_device.mp4";
+
+
+
+
 
 const Description: React.FC = () => {
   return (
@@ -19,7 +21,6 @@ const Description: React.FC = () => {
             </div>
             <div className={styles.DescImageContainer}>
               <img className={styles.DescImage} src={iconTV} alt="TV Icon" />
-  {/*            <video className={styles.descVideoTV} src={videoTV} autoPlay muted loop></video>*/}
             </div>
           </div>
         </div>
@@ -47,7 +48,6 @@ const Description: React.FC = () => {
             </div>
             <div className={styles.DescImageContainer}>
               <img className={styles.DescImage} src={iconDevice} alt="TV Icon" />
-  {/*            <video className={styles.descVideoTV} src={videoTV} autoPlay muted loop></video>*/}
             </div>
           </div>
         </div>
