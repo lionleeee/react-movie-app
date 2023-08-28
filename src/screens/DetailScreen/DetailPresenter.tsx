@@ -19,19 +19,22 @@ const BlurBackground = styled.div`
 
 
 interface DetailPresenterProps {
-  result: any,
-  error: null,
-  loading: true,
+  result: any | null,
+  error: string |null,
+  loading: boolean,
   //isMovie: pathname.includes("/movie/"),
-  recommendations: null,
-  cast: null,
-  keywords: null,
-  reviews: null,
-  backdrops: null,
-  posters: null,
-  tvDetail2: null,
+  recommendations: any,
+  cast: any,
+  keywords: any,
+  reviews: any,
+  backdrops: any,
+  posters: any,
+  tvDetail2: any,
   
 }
+
+
+
 
 
 const DetailPresenter: React.FC<DetailPresenterProps> = ({

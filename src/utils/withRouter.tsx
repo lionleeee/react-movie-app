@@ -7,7 +7,7 @@ const withRouter = (WrappedComponent: React.ComponentType<any>) => (props: any) 
   return (
     <WrappedComponent
       {...props}
-      params={params}
+      params={params.id}
     />
   );
 };
