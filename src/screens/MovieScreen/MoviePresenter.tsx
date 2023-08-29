@@ -54,7 +54,6 @@ const MoviePresenter: React.FC<MoviePresenterProps> = ({
 
   
   const getInfiniteApi = async (): Promise<void> => {
-    console.log(page);
     if (page !== 1) {
       try {
         let newMovies: any[] = [];

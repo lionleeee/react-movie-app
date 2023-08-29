@@ -8,7 +8,7 @@ const useInfiniteScroll = (): number => {
     const innerHeight: number = window.innerHeight;
     const scrollHeight: number = document.documentElement.scrollHeight;
 
-    if (scrollTop + innerHeight >= scrollHeight) {
+    if (scrollTop + innerHeight + 50 >= scrollHeight) {
       setPage((prevPage) => prevPage + 1);
     }
   };
@@ -21,7 +21,6 @@ const useInfiniteScroll = (): number => {
     };
   }, []);
 
-  console.log(page);
   return page;
 };
 
