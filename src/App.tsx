@@ -19,6 +19,10 @@ const App : FC = () =>{
     })
   );
 
+  // React Query는 데이터 가져오기와 캐싱에 대한 라이브러리로 전반적인 상태관리를 담당
+  // 
+
+
   return(
     <RecoilRoot>
       <QueryClientProvider client={queryClient}>
